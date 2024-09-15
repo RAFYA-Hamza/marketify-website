@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Space Grotesk", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: rgba(25, 26, 35, 1);
+  --primary-bg-color: var(--primary-color);
+  --primary-text-color: var(--primary-color);
+
+  --secondary-color: rgba(185, 255, 102, 1);
+  --secondary-bg-color: var(--secondary-color);
+  --secondary-text-color: var(--secondary-color);
+
+  --accent-color: rgba(243, 243, 243, 1);
+  --accent-bg-color: var(--accent-color);
+  --accent-text-color: var(--accent-color);
+}
+
+/* GENERAL STYLE */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.button {
+  height: 4.25rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--primary:hover {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+}
+
+/* ABOUT SECTION */
+
+.about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 1.75rem 6.25rem;
+}
+
+.about__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__logo {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.about__list {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.about__list .button {
+  width: 14.5rem;
+  cursor: pointer;
+}
+
+.about__item {
+  font-size: 1rem;
+}
+
+.about__item--active {
+  text-decoration: underline;
+}
+
+.about__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__content {
+  width: 33.25rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.25rem;
+}
+
+.about__title {
+  font-weight: bold;
+}
+
+.about__p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.about__button {
+  width: 16.5rem;
+  color: white;
+  background-color: var(--primary-bg-color);
+}
+
+.about__image {
+  height: 30rem;
+  width: 37.5rem;
+
+  background-image: url("../assets/images/about-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__logos {
+  display: flex;
+  justify-content: space-between;
+}

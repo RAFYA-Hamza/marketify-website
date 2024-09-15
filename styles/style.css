@@ -118,6 +118,10 @@ a {
   font-size: 1rem;
 }
 
+.about__item:hover a {
+  background-color: var(--secondary-text-color);
+}
+
 .about__item--active {
   text-decoration: underline;
 }

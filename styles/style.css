@@ -199,8 +199,7 @@ a {
   padding: 6.25rem;
 }
 
-.service__p,
-.cases__p {
+.service__p {
   width: 37rem;
 }
 
@@ -269,7 +268,8 @@ a {
   transform: rotateZ(135deg);
 }
 
-.service__click:hover {
+.service__click:hover,
+.cases__click:hover {
   text-decoration: underline;
 }
 
@@ -335,6 +335,46 @@ a {
 .cases__container {
   height: 20.375rem;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 
+  border-radius: 45px;
+
+  padding: 3.75rem 3.75rem;
   background-color: var(--primary-bg-color);
+}
+
+.cases__content {
+  height: 10rem;
+  width: 17.875rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cases__p {
+  color: white;
+}
+
+.cases__button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cases__button img {
+  height: 28px;
+  transform: rotateZ(135deg);
+}
+
+.cases__click--c2 {
+  color: var(--secondary-text-color);
+}
+
+.cases__divider {
+  height: 100%;
+  width: 2px;
+
+  background-color: white;
 }

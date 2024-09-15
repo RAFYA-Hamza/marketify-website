@@ -63,6 +63,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--primary-text-color);
+  transition: all 300ms ease-in-out;
 }
 
 .button {
@@ -77,6 +78,19 @@ a {
 .button--primary:hover {
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
+}
+
+.block__title {
+  font-weight: bold;
+  display: inline-block;
+  padding: 2px 4px;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--secondary-bg-color);
+}
+
+.block__title--bg3 {
+  background-color: var(--accent-bg-color);
 }
 
 /* ABOUT SECTION */
@@ -166,4 +180,85 @@ a {
 .about__logos {
   display: flex;
   justify-content: space-between;
+}
+
+/* SERVICES SECTION */
+
+.service {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.75rem 6.25rem;
+}
+
+.service__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+
+  gap: 40px;
+}
+
+.service__card {
+  height: 19.375rem;
+  padding: 3.125rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid black;
+  border-radius: 45px;
+  box-shadow: 0px 5px var(--primary-bg-color);
+}
+
+.service__card--bg2 {
+  background-color: var(--secondary-bg-color);
+}
+
+.service__card--bg3 {
+  background-color: var(--accent-bg-color);
+}
+
+.service__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service__button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.service__link {
+  height: 2.5rem;
+  width: 2.5rem;
+
+  border-radius: 50%;
+
+  background-color: var(--primary-color);
+}
+
+.service__link img {
+  height: 100%;
+  width: 100%;
+
+  transform: rotateZ(135deg);
+}
+
+.service__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75px;
+}
+
+.service__logo {
+  height: 10.625rem;
+  width: 13.125rem;
 }

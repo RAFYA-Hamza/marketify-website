@@ -395,9 +395,23 @@ a {
   padding: 6.25rem;
 }
 
+.process__container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
 .process__card {
   height: 100%;
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
   border: 1px solid var(--primary-bg-color);
   border-radius: 45px;
@@ -405,6 +419,10 @@ a {
 
   background-color: var(--accent-bg-color);
   padding: 2.5rem 3.75rem;
+}
+
+.process__card.open {
+  background-color: var(--secondary-bg-color);
 }
 
 .process__heading {
@@ -446,6 +464,24 @@ a {
 
 .process__button span:last-child {
   transform: translateX(-50%);
+}
+
+.process__divider {
+  width: 100%;
+  display: none;
+
+  padding: 1px 3.75rem;
+
+  background-color: var(--primary-bg-color);
+}
+
+.process__content {
+  display: none;
+}
+
+.process__divider.open,
+.process__content.open {
+  display: block;
 }
 
 /* .process__button.open span:first-child {

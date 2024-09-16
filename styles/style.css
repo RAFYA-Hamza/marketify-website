@@ -99,6 +99,10 @@ a {
   background-color: var(--accent-bg-color);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* ABOUT SECTION */
 
 .about {
@@ -378,3 +382,76 @@ a {
 
   background-color: white;
 }
+
+/* PRICING SECTION */
+
+.process {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 5rem;
+  padding: 6.25rem;
+}
+
+.process__card {
+  height: 100%;
+  width: 100%;
+
+  border: 1px solid var(--primary-bg-color);
+  border-radius: 45px;
+  box-shadow: 0px 5px var(--primary-bg-color);
+
+  background-color: var(--accent-bg-color);
+  padding: 2.5rem 3.75rem;
+}
+
+.process__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.process__title {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.process__button {
+  height: 3.625rem;
+  width: 3.625rem;
+
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process__button span {
+  height: 6px;
+  width: 30px;
+  display: block;
+
+  border-radius: 2px;
+  background-color: var(--primary-color);
+}
+
+.process__button span:first-child {
+  transform: translateX(50%) rotateZ(90deg);
+}
+
+.process__button span:last-child {
+  transform: translateX(-50%);
+}
+
+/* .process__button.open span:first-child {
+  transform: translateX(50%) rotateZ(90deg);
+}
+
+.process__button.open span:last-child {
+  transform: translateX(-50%);
+} */

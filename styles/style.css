@@ -441,12 +441,23 @@ a {
   height: 3.625rem;
   width: 3.625rem;
 
-  border: 1px solid var(--primary-color);
-  border-radius: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+
+  transition: all 300ms ease;
+}
+
+.process__button:hover {
+  background-color: var(--secondary-bg-color);
+}
+
+.process__button.open:hover {
+  background-color: white;
 }
 
 .process__button span {
@@ -469,9 +480,7 @@ a {
 .process__divider {
   width: 100%;
   display: none;
-
   padding: 1px 3.75rem;
-
   background-color: var(--primary-bg-color);
 }
 

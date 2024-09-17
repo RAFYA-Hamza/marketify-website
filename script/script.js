@@ -27,20 +27,22 @@ document.querySelector(".js-process__container").innerHTML =
   working__processHTML;
 
 document.querySelectorAll(".js-process__card").forEach((button) => {
-  button.addEventListener("click", () => {
-    const cardId = button.getAttribute("data-card");
+  button
+    .getElementsByClassName("js-process__button")[0]
+    .addEventListener("click", () => {
+      const cardId = button.getAttribute("data-card");
 
-    const card = document.querySelector(
-      `.js-process__card[data-card="${cardId}"]`
-    );
+      const card = document.querySelector(
+        `.js-process__card[data-card="${cardId}"]`
+      );
 
-    const divider = card.querySelector(".js-process__divider");
-    const content = card.querySelector(".js-process__content");
-    const buttonIcon = card.querySelector(".js-process__button");
+      const divider = card.querySelector(".js-process__divider");
+      const content = card.querySelector(".js-process__content");
+      const buttonIcon = card.querySelector(".js-process__button");
 
-    divider.classList.toggle("open");
-    content.classList.toggle("open");
-    buttonIcon.classList.toggle("open");
-    card.classList.toggle("open");
-  });
+      divider.classList.toggle("open");
+      content.classList.toggle("open");
+      buttonIcon.classList.toggle("open");
+      card.classList.toggle("open");
+    });
 });

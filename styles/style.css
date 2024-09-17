@@ -470,11 +470,21 @@ a {
 }
 
 .process__button span:first-child {
+  transition: all 300ms ease-in-out;
   transform: translateX(50%) rotateZ(90deg);
 }
 
 .process__button span:last-child {
+  transition: all 300ms ease-in-out;
   transform: translateX(-50%);
+}
+
+.process__button.open span:first-child {
+  transform: translateX(50%) rotateZ(180deg);
+}
+
+.process__button.open span:last-child {
+  transform: translateX(-50%) rotateZ(180deg);
 }
 
 .process__divider {

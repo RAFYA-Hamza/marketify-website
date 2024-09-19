@@ -503,10 +503,86 @@ a {
   display: block;
 }
 
-/* .process__button.open span:first-child {
-  transform: translateX(50%) rotateZ(90deg);
+/* BLOG SECTION */
+
+.blog {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 5rem;
+  padding: 6.25rem;
 }
 
-.process__button.open span:last-child {
-  transform: translateX(-50%);
-} */
+.blog__card {
+  height: 20.75rem;
+  width: 24.125rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+
+  padding: 2.5rem 2.25rem;
+
+  border: 1px solid var(--primary-bg-color);
+  border-radius: 45px;
+  box-shadow: 0px 5px var(--primary-bg-color);
+}
+
+.blog__heading {
+  height: 6.75rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.blog__profile {
+  height: 6.75rem;
+  width: 6.75rem;
+
+  margin-right: 1.25rem;
+  background-color: red;
+}
+
+.blog__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  flex: 1;
+}
+
+.blog__name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+}
+
+.blog__name,
+h4 {
+  font-weight: 600;
+}
+
+.blog__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+
+  border-radius: 50%;
+  background-image: url("../assets/icons/linkedin-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+  background-color: var(--primary-bg-color);
+}
+
+.blog__divider {
+  height: 3px;
+  width: 100%;
+
+  background-color: var(--primary-bg-color);
+}

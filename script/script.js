@@ -27,14 +27,14 @@ working.forEach((work) => {
 
 team.forEach((member) => {
   team__blogHTML += `
-            <div class="blog__card">
-                <div class="blog__heading">
-                    <div class="blog__profile js-blog__profile"></div>
+            <div class="blog-team__card">
+                <div class="blog-team__heading">
+                    <div class="blog-team__profile js-blog-team__profile"></div>
 
-                    <div class="blog__content">
-                        <div class="blog__icon"></div>
+                    <div class="blog-team__content">
+                        <div class="blog-team__icon"></div>
 
-                        <div class="blog__name">
+                        <div class="blog-team__name">
                             <h4>${member.name}</h4>
                             <p>${member.status}</p>
                         </div>
@@ -42,7 +42,7 @@ team.forEach((member) => {
 
                 </div>
 
-                <span class="blog__divider"></span>
+                <span class="blog-team__divider"></span>
                 <p>
                 ${member.description}
                 </p>
@@ -53,10 +53,10 @@ team.forEach((member) => {
 document.querySelector(".js-process__container").innerHTML =
   working__processHTML;
 
-document.querySelector(".js-blog__team").innerHTML = team__blogHTML;
+document.querySelector(".js-blog-team__container").innerHTML = team__blogHTML;
 
-document.querySelectorAll(".js-blog__profile").forEach((imgs) => {
-  imgs.style.backgroundImage = "url('../assets/images/profile-2.png')";
+document.querySelectorAll(".js-blog-team__profile").forEach((imgs, index) => {
+  imgs.style.backgroundImage = `url('../assets/images/profile-${index}.png')`;
 });
 
 document.querySelectorAll(".js-process__card").forEach((button) => {

@@ -614,6 +614,7 @@ h4 {
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 7.75rem;
 
   border-radius: 45px;
@@ -628,7 +629,7 @@ h4 {
 
   gap: 3.25rem;
 
-  transform: translateX(100%);
+  /* transform: translateX(100%); */
 }
 
 .blog-testimonial__card {
@@ -649,8 +650,41 @@ h4 {
 }
 
 .blog-testimonial__slider {
-  height: 3rem;
-  width: 100%;
+  width: 50%;
 
+  display: flex;
+  justify-content: space-between;
   background-color: var(--primary-bg-color);
+}
+
+.arrow {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  border-radius: 50%;
+  background-color: white;
+}
+
+.arrow span {
+  height: 5px;
+  width: 1.5rem;
+  border-radius: 2px;
+  background-color: black;
+}
+
+.arrow span:first-child {
+  transform: rotateZ(-45deg) translateY(-3px);
+}
+
+.arrow span:nth-child(2) {
+  width: 2rem;
+  transform: translateX(5px);
+}
+
+.arrow span:last-child {
+  transform: rotateZ(45deg) translateY(3px);
 }

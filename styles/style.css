@@ -629,7 +629,6 @@ h4 {
   gap: 3.25rem;
 
   transform: translateX(100%);
-  /* flex-wrap: nowrap; */
 }
 
 .blog-testimonial__card {

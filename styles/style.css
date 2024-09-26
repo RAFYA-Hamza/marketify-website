@@ -614,14 +614,22 @@ h4 {
 
   display: flex;
   flex-direction: column;
+  gap: 7.75rem;
 
   border-radius: 45px;
   padding: 3rem 0;
   background-color: var(--accent-bg-color);
+  overflow: hidden;
 }
 
 .blog-testimonial__content {
   display: flex;
+  justify-content: center;
+
+  gap: 3.25rem;
+
+  transform: translateX(100%);
+  /* flex-wrap: nowrap; */
 }
 
 .blog-testimonial__card {
@@ -633,8 +641,8 @@ h4 {
 }
 
 .blog-testimonial__comment {
-  /* height: 16.75rem;
-  width: 38rem; */
+  height: 16.75rem;
+  width: 38rem;
 
   border: 1px solid var(--secondary-bg-color);
   border-radius: 45px;

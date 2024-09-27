@@ -1,9 +1,12 @@
 import { working } from "../data/working-process.js";
 import { team } from "../data/team-work.js";
+import { testimonials } from "../data/testimonials.js";
 
 let working__processHTML = "";
 let team__blogHTML = "";
+let testimonialsHTML = "";
 
+// ----------------------------------> Work team DOM
 working.forEach((work) => {
   working__processHTML += `
             <div class="process__card js-process__card" data-card="${work.id}">
@@ -25,6 +28,31 @@ working.forEach((work) => {
  `;
 });
 
+document.querySelector(".js-process__container").innerHTML =
+  working__processHTML;
+
+document.querySelectorAll(".js-process__card").forEach((button) => {
+  button
+    .getElementsByClassName("js-process__button")[0]
+    .addEventListener("click", () => {
+      const cardId = button.getAttribute("data-card");
+
+      const card = document.querySelector(
+        `.js-process__card[data-card="${cardId}"]`
+      );
+
+      const divider = card.querySelector(".js-process__divider");
+      const content = card.querySelector(".js-process__content");
+      const buttonIcon = card.querySelector(".js-process__button");
+
+      divider.classList.toggle("open");
+      content.classList.toggle("open");
+      buttonIcon.classList.toggle("open");
+      card.classList.toggle("open");
+    });
+});
+
+// ---------------------------------->Team member DOM
 team.forEach((member) => {
   team__blogHTML += `
             <div class="blog-team__card">
@@ -50,32 +78,28 @@ team.forEach((member) => {
   `;
 });
 
-document.querySelector(".js-process__container").innerHTML =
-  working__processHTML;
-
 document.querySelector(".js-blog-team__container").innerHTML = team__blogHTML;
 
 document.querySelectorAll(".js-blog-team__profile").forEach((imgs, index) => {
   imgs.style.backgroundImage = `url('../assets/images/profile-${index}.png')`;
 });
 
-document.querySelectorAll(".js-process__card").forEach((button) => {
-  button
-    .getElementsByClassName("js-process__button")[0]
-    .addEventListener("click", () => {
-      const cardId = button.getAttribute("data-card");
+// ----------------------------------> Testimonials
 
-      const card = document.querySelector(
-        `.js-process__card[data-card="${cardId}"]`
-      );
+testimonials.forEach((testimonial) => {
+  testimonialsHTML += `
+                <div id="${testimonial.id}" class="blog-testimonial__card">
+                    <div class="blog-testimonial__comment">
+                        <p>"${testimonial.Comment}"</p>
+                    </div>
+                    <div class="blog-testimonial__name">
+                        <h4>${testimonial.name}</h4>
+                        <p>${testimonial.status}</p>
+                    </div>
+                </div>
 
-      const divider = card.querySelector(".js-process__divider");
-      const content = card.querySelector(".js-process__content");
-      const buttonIcon = card.querySelector(".js-process__button");
-
-      divider.classList.toggle("open");
-      content.classList.toggle("open");
-      buttonIcon.classList.toggle("open");
-      card.classList.toggle("open");
-    });
+`;
 });
+
+document.querySelector(".js-blog-testimonial__content").innerHTML =
+  testimonialsHTML;

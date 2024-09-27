@@ -125,12 +125,12 @@ a {
   height: 5px;
   width: 1.5rem;
   border-radius: 2px;
-  background-color: var(--primary-bg-color);
+  background-color: var(--accent-bg-color);
   transition: all 200ms ease-in-out;
 }
 
 .arrow:hover span {
-  background-color: var(--secondary-bg-color);
+  background-color: rgb(77, 77, 77);
 }
 
 .arrow span:first-child {
@@ -656,7 +656,7 @@ h4 {
 
   border-radius: 45px;
   padding: 3rem 0;
-  background-color: var(--accent-bg-color);
+  background-color: var(--primary-bg-color);
   overflow: hidden;
 }
 
@@ -666,7 +666,7 @@ h4 {
 
   gap: 3.25rem;
 
-  /* transform: translateX(100%); */
+  /* transform: translateX(0%); */
 }
 
 .blog-testimonial__card {
@@ -675,15 +675,29 @@ h4 {
 
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .blog-testimonial__comment {
   height: 16.75rem;
   width: 38rem;
 
+  color: white;
   border: 1px solid var(--secondary-bg-color);
   border-radius: 45px;
   padding: 3rem;
+}
+
+.blog-testimonial__name {
+  margin-left: 5rem;
+}
+
+.blog-testimonial__name h4 {
+  color: var(--secondary-bg-color);
+}
+
+.blog-testimonial__name p {
+  color: white;
 }
 
 .blog-testimonial__slider {
@@ -692,7 +706,6 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
 }
 
 .blog-testimonial__right-arrow {
@@ -713,5 +726,5 @@ h4 {
   width: 1rem;
 
   border-radius: 2px;
-  background-color: var(--primary-bg-color);
+  background-color: var(--accent-bg-color);
 }

@@ -5,6 +5,40 @@ import { testimonials } from "../data/testimonials.js";
 let working__processHTML = "";
 let team__blogHTML = "";
 let testimonialsHTML = "";
+let starsHTML = "";
+
+let length = testimonials.length;
+let idComment = length - 1;
+let idStars = 0;
+let sliderDirection = 0;
+
+function updateListComments(idStars, direction) {
+  const starsElement = document.querySelectorAll(".js-blog-testimonial__stars");
+  const contentElement = document.querySelector(
+    ".js-blog-testimonial__content"
+  );
+
+  starsElement.forEach((element) => {
+    element.style.backgroundColor = "var(--accent-bg-color)";
+  });
+
+  starsElement.forEach((element) => {
+    if (element.id == idStars) {
+      element.style.backgroundColor = "var(--secondary-bg-color)";
+    }
+  });
+
+  contentElement.style.transform = `translateX(${direction * 15}%)`;
+
+  console.log(idStars);
+  console.log(idComment);
+
+  // if (direction === -1) {
+  //   contentElement.style.transform = "translateX(-15%)";
+  // } else if (direction === 1) {
+  //   contentElement.style.transform = "translateX(15%)";
+  // }
+}
 
 // ----------------------------------> Work team DOM
 working.forEach((work) => {
@@ -88,18 +122,68 @@ document.querySelectorAll(".js-blog-team__profile").forEach((imgs, index) => {
 
 testimonials.forEach((testimonial) => {
   testimonialsHTML += `
-                <div id="${testimonial.id}" class="blog-testimonial__card">
-                    <div class="blog-testimonial__comment">
-                        <p>"${testimonial.Comment}"</p>
+                  <div id="${testimonial.id}" class="blog-testimonial__card">
+                    <div class="blog-testimonial__container-comment">
+                        <div class="blog-testimonial__comment">
+                            <p>"${testimonial.Comment}"</p>
+                        </div>
+                        <div class="blog-testimonial__shape">
+                        </div>
                     </div>
                     <div class="blog-testimonial__name">
                         <h4>${testimonial.name}</h4>
                         <p>${testimonial.status}</p>
                     </div>
-                </div>
+                  </div>
 
+`;
+  starsHTML += `
+          <div id="${testimonial.id}" class="blog-testimonial__stars js-blog-testimonial__stars"></div>
 `;
 });
 
 document.querySelector(".js-blog-testimonial__content").innerHTML =
   testimonialsHTML;
+
+document.querySelector(".js-blog-testimonial__navigation").innerHTML =
+  starsHTML;
+
+// if (length % 2 == 0) {
+//   const element = document.getElementById(`${idComment}`);
+//   if (element && element.classList.contains("blog-testimonial__card")) {
+//     element.style.display = "none";
+//   }
+// }
+
+if (length % 2 == 0) {
+  idStars = length / 2 - 1;
+} else {
+  length--;
+  idStars = length / 2;
+}
+
+updateListComments(idStars, sliderDirection);
+
+document
+  .querySelector(".js-log-testimonial__left-arrow")
+  .addEventListener("click", () => {
+    if (idStars > 0) {
+      sliderDirection++;
+      idStars--;
+    } else {
+      idStars = 0;
+    }
+    updateListComments(idStars, sliderDirection);
+  });
+
+document
+  .querySelector(".js-log-testimonial__right-arrow")
+  .addEventListener("click", () => {
+    if (idStars < length - 1) {
+      sliderDirection--;
+      idStars++;
+    } else {
+      idStars = length - 1;
+    }
+    updateListComments(idStars, sliderDirection);
+  });

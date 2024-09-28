@@ -663,10 +663,10 @@ h4 {
 .blog-testimonial__content {
   display: flex;
   justify-content: center;
-
   gap: 3.25rem;
 
-  /* transform: translateX(0%); */
+  transform: translateX(0);
+  transition: all 400ms ease-in-out;
 }
 
 .blog-testimonial__card {
@@ -675,7 +675,14 @@ h4 {
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+}
+
+.blog-testimonial__container-comment {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-testimonial__comment {
@@ -686,6 +693,19 @@ h4 {
   border: 1px solid var(--secondary-bg-color);
   border-radius: 45px;
   padding: 3rem;
+}
+
+.blog-testimonial__shape {
+  height: 2.5rem;
+  width: 3rem;
+
+  position: relative;
+  left: 3.5rem;
+  top: -1px;
+
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid var(--secondary-bg-color);
 }
 
 .blog-testimonial__name {

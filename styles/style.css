@@ -665,7 +665,6 @@ h4 {
   justify-content: center;
   gap: 3.25rem;
 
-  transform: translateX(0);
   transition: all 400ms ease-in-out;
 }
 

@@ -8,9 +8,8 @@ let testimonialsHTML = "";
 let starsHTML = "";
 
 let length = testimonials.length;
-let idComment = length - 1;
 let idStars = 0;
-let sliderDirection = 0;
+let sliderDirection;
 
 function updateListComments(idStars, direction) {
   const starsElement = document.querySelectorAll(".js-blog-testimonial__stars");
@@ -28,16 +27,7 @@ function updateListComments(idStars, direction) {
     }
   });
 
-  contentElement.style.transform = `translateX(${direction * 15}%)`;
-
-  console.log(idStars);
-  console.log(idComment);
-
-  // if (direction === -1) {
-  //   contentElement.style.transform = "translateX(-15%)";
-  // } else if (direction === 1) {
-  //   contentElement.style.transform = "translateX(15%)";
-  // }
+  contentElement.style.transform = `translateX(${direction * 41}rem)`;
 }
 
 // ----------------------------------> Work team DOM
@@ -64,27 +54,6 @@ working.forEach((work) => {
 
 document.querySelector(".js-process__container").innerHTML =
   working__processHTML;
-
-document.querySelectorAll(".js-process__card").forEach((button) => {
-  button
-    .getElementsByClassName("js-process__button")[0]
-    .addEventListener("click", () => {
-      const cardId = button.getAttribute("data-card");
-
-      const card = document.querySelector(
-        `.js-process__card[data-card="${cardId}"]`
-      );
-
-      const divider = card.querySelector(".js-process__divider");
-      const content = card.querySelector(".js-process__content");
-      const buttonIcon = card.querySelector(".js-process__button");
-
-      divider.classList.toggle("open");
-      content.classList.toggle("open");
-      buttonIcon.classList.toggle("open");
-      card.classList.toggle("open");
-    });
-});
 
 // ---------------------------------->Team member DOM
 team.forEach((member) => {
@@ -148,21 +117,38 @@ document.querySelector(".js-blog-testimonial__content").innerHTML =
 document.querySelector(".js-blog-testimonial__navigation").innerHTML =
   starsHTML;
 
-// if (length % 2 == 0) {
-//   const element = document.getElementById(`${idComment}`);
-//   if (element && element.classList.contains("blog-testimonial__card")) {
-//     element.style.display = "none";
-//   }
-// }
-
 if (length % 2 == 0) {
   idStars = length / 2 - 1;
+  sliderDirection = 0.5;
 } else {
   length--;
   idStars = length / 2;
+  sliderDirection = 0;
+  length = testimonials.length;
 }
 
 updateListComments(idStars, sliderDirection);
+
+document.querySelectorAll(".js-process__card").forEach((button) => {
+  button
+    .getElementsByClassName("js-process__button")[0]
+    .addEventListener("click", () => {
+      const cardId = button.getAttribute("data-card");
+
+      const card = document.querySelector(
+        `.js-process__card[data-card="${cardId}"]`
+      );
+
+      const divider = card.querySelector(".js-process__divider");
+      const content = card.querySelector(".js-process__content");
+      const buttonIcon = card.querySelector(".js-process__button");
+
+      divider.classList.toggle("open");
+      content.classList.toggle("open");
+      buttonIcon.classList.toggle("open");
+      card.classList.toggle("open");
+    });
+});
 
 document
   .querySelector(".js-log-testimonial__left-arrow")
@@ -179,6 +165,8 @@ document
 document
   .querySelector(".js-log-testimonial__right-arrow")
   .addEventListener("click", () => {
+    console.log(idStars);
+
     if (idStars < length - 1) {
       sliderDirection--;
       idStars++;

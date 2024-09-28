@@ -747,3 +747,97 @@ h4 {
   border-radius: 2px;
   background-color: var(--accent-bg-color);
 }
+
+/* CONTACT SECION */
+
+.contact {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 5rem;
+  padding: 6.25rem;
+}
+
+.contact__container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--accent-bg-color);
+  border-radius: 45px;
+
+  padding: 3.75rem 0px 5rem 6.25rem;
+}
+
+.contact__form {
+  height: 100%;
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  gap: 2.5rem;
+}
+
+.contact__checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 2.25rem;
+}
+
+.contact__radio {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact__radio input {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.contact__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.65rem;
+}
+
+.contact__field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact__field input,
+.contact__field textarea {
+  height: 3.5rem;
+  width: 34.75rem;
+
+  border: 1px solid black;
+  border-radius: 14px;
+
+  padding: 1.125rem 1.875rem;
+}
+
+.contact__field textarea {
+  height: unset;
+}
+
+.contact__button {
+  width: 100%;
+}
+
+.contact__logo {
+  height: 40.5rem;
+  width: 23rem;
+  background-image: url("../assets/images/contact-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

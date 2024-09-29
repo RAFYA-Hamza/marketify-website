@@ -855,6 +855,7 @@ h4 {
 
   display: flex;
   flex-direction: column;
+  gap: 4.125rem;
 
   color: white;
   border-radius: 45px 45px 0 0;
@@ -927,4 +928,75 @@ h4 {
 .contact-footer__navigation-twiter {
   height: 1.875rem;
   background-image: url("../assets/icons/twitter-logo.png");
+}
+
+.contact-footer__contacts {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-footer__contacts-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.contact-footer__contacts-content h4 {
+  color: var(--primary-text-color);
+}
+
+.contact-footer__contacts-content p {
+  font-weight: 100;
+}
+
+.contact-footer__contacts-subscribe {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+
+  border-radius: 1rem;
+  background-color: rgba(41, 42, 50, 1);
+  padding: 3.625rem 2.5rem;
+}
+
+.contact-footer__contacts-subscribe input {
+  height: 4.25rem;
+  width: 17.875rem;
+  font-size: 1rem;
+
+  background-color: transparent;
+  color: white;
+
+  border: 1px solid white;
+  border-radius: 14px;
+
+  padding: 1.375rem 2.25rem;
+}
+
+.contact-footer__contacts-subscribe input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.contact-footer__button {
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+
+  transition: all 300ms ease-in;
+}
+
+.contact-footer__button:hover {
+  background-color: var(--primary-bg-color);
+  color: var(--accent-text-color);
 }

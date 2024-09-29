@@ -760,10 +760,10 @@ h4 {
   align-items: flex-start;
 
   gap: 5rem;
-  padding: 6.25rem;
+  padding: 6.25rem 6.25rem 0px 6.25rem;
 }
 
-.contact__container {
+.contact-block__container {
   height: 100%;
   width: 100%;
 
@@ -776,7 +776,7 @@ h4 {
   padding: 3.75rem 0px 5rem 6.25rem;
 }
 
-.contact__form {
+.contact-block__form {
   height: 100%;
   width: auto;
 
@@ -787,36 +787,38 @@ h4 {
   gap: 2.5rem;
 }
 
-.contact__checkbox {
+.contact-block__checkbox {
   display: flex;
   flex-direction: row;
   gap: 2.25rem;
 }
 
-.contact__radio {
+.contact-block__radio {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.contact__radio input {
+.contact-block__radio input {
   height: 1.5rem;
   width: 1.5rem;
+
+  cursor: pointer;
 }
 
-.contact__fields {
+.contact-block__fields {
   display: flex;
   flex-direction: column;
   gap: 1.65rem;
 }
 
-.contact__field label {
+.contact-block__field label {
   display: block;
   margin-bottom: 5px;
 }
 
-.contact__field input,
-.contact__field textarea {
+.contact-block__field input,
+.contact-block__field textarea {
   height: 3.5rem;
   width: 34.75rem;
 
@@ -826,18 +828,103 @@ h4 {
   padding: 1.125rem 1.875rem;
 }
 
-.contact__field textarea {
+.contact-block__field textarea {
   height: unset;
 }
 
-.contact__button {
+.contact-block__button {
   width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
-.contact__logo {
+.contact-block__logo {
   height: 40.5rem;
   width: 23rem;
   background-image: url("../assets/images/contact-logo.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* FOOTER SECTION */
+
+.contact-footer__container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  border-radius: 45px 45px 0 0;
+  background-color: var(--primary-bg-color);
+  padding: 3.5rem 3.75rem;
+}
+
+.contact-footer__navigation {
+  height: 100%;
+  width: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-footer__navigation-logo {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.contact-footer__navigation-list {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.contact-footer__navigation-item {
+  text-decoration: underline;
+  cursor: pointer;
+
+  transition: all 300ms ease-in-out;
+}
+
+.contact-footer__navigation-item:hover {
+  color: var(--secondary-bg-color);
+}
+
+.contact-footer__navigation-links {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+
+  gap: 1.25rem;
+}
+
+.contact-footer__navigation-linkedin,
+.contact-footer__navigation-facebook,
+.contact-footer__navigation-twiter {
+  height: 1.875rem;
+  width: 1.875rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.contact-footer__navigation-linkedin {
+  background-image: url("../assets/icons/linke-logo.png");
+}
+
+.contact-footer__navigation-facebook {
+  background-image: url("../assets/icons/facebook-logo.png");
+}
+
+.contact-footer__navigation-twiter {
+  height: 1.875rem;
+  background-image: url("../assets/icons/twitter-logo.png");
 }

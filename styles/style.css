@@ -885,14 +885,14 @@ h4 {
   gap: 2.5rem;
 }
 
-.contact-footer__navigation-item {
+.contact-footer__navigation-item a {
   text-decoration: underline;
-  cursor: pointer;
+  color: white;
 
   transition: all 300ms ease-in-out;
 }
 
-.contact-footer__navigation-item:hover {
+.contact-footer__navigation-item a:hover {
   color: var(--secondary-bg-color);
 }
 
@@ -979,7 +979,7 @@ h4 {
 }
 
 .contact-footer__contacts-subscribe input:focus {
-  outline: none;
+  outline-color: var(--secondary-bg-color);
 }
 
 ::placeholder {
@@ -999,4 +999,35 @@ h4 {
 .contact-footer__button:hover {
   background-color: var(--primary-bg-color);
   color: var(--accent-text-color);
+}
+
+.contact-footer__container span {
+  height: 1px;
+  width: 100%;
+
+  border-radius: 2px;
+  background-color: white;
+}
+
+.contact-footer__rights {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  text-wrap: nowrap;
+}
+
+.contact-footer__rights p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.contact-footer__rights a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 100;
 }

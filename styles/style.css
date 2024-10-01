@@ -228,6 +228,42 @@ a {
   justify-content: space-between;
 }
 
+/* ABOUT SECTION MENU */
+
+.about-menu__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.about-menu__items {
+  position: relative;
+}
+
+.about-menu__icon {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.about-menu__icon span {
+  height: 0.25rem;
+  width: 2rem;
+
+  border-radius: 2px;
+  background-color: var(--primary-bg-color);
+}
+
+.about-menu__list {
+  position: absolute;
+  right: 0;
+  background-color: red;
+  /* display: none; */
+}
+
 /* SERVICES SECTION */
 
 .service {

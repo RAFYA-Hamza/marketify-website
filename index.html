@@ -14,7 +14,7 @@
         <nav id="desktop-nav" class="about__nav">
             <div class="about__logo">Marketify</div>
             <ul class="about__list">
-                <li class="about__item about__item--active"><a href="">About us</a></li>
+                <li class="about__item"><a href="#about-us">About us</a></li>
                 <li class="about__item"><a href="#services">Services</a></li>
                 <li class="about__item"><a href="#use-cases">Use Cases</a></li>
                 <li class="about__item"><a href="#working-process">Pricing</a></li>
@@ -318,14 +318,14 @@
         </div>
 
         <div class="contact-block__container">
-            <form class="contact-block__form" action="post">
+            <form id="form" class="contact-block__form">
                 <div class="contact-block__checkbox">
                     <div class="contact-block__radio">
-                        <input type="radio" name="say-hi" id="say-hi">
+                        <input type="radio" name="checkbox" value="say-hi">
                         <label for="say-hi">Say Hi</label>
                     </div>
                     <div class="contact-block__radio">
-                        <input type="radio" name="get-quote" id="get-quote">
+                        <input type="radio" name="checkbox" value="get-quote">
                         <label for="get-quote">Get a Quote</label>
                     </div>
 
@@ -351,7 +351,8 @@
                     </div>
                 </div>
 
-                <button class="button button--primary contact-block__button" type="submit">Send Message</button>
+                <button class="button button--primary contact-block__button js-contact-block__button" type="submit">Send
+                    Message</button>
             </form>
             <div class="contact-block__logo"></div>
         </div>
@@ -360,11 +361,11 @@
             <div class="contact-footer__navigation">
                 <div class="contact-footer__navigation-logo">Marketify</div>
                 <ul class="contact-footer__navigation-list">
-                    <li class="contact-footer__navigation-item"><a href="">About us</a></li>
-                    <li class="contact-footer__navigation-item"><a href="">Services</a></li>
-                    <li class="contact-footer__navigation-item"><a href="">Use Cases</a></li>
-                    <li class="contact-footer__navigation-item"><a href="">Pricing</a></li>
-                    <li class="contact-footer__navigation-item"><a href="">Blog</a></li>
+                    <li class="contact-footer__navigation-item"><a href="#about-us">About us</a></li>
+                    <li class="contact-footer__navigation-item"><a href="#services">Services</a></li>
+                    <li class="contact-footer__navigation-item"><a href="#use-cases">Use Cases</a></li>
+                    <li class="contact-footer__navigation-item"><a href="#working-process">Pricing</a></li>
+                    <li class="contact-footer__navigation-item"><a href="#blogs">Blog</a></li>
                 </ul>
                 <div class="contact-footer__navigation-links">
                     <div class="contact-footer__navigation-linkedin"></div>
@@ -389,7 +390,8 @@
             <span></span>
 
             <div class="contact-footer__rights">
-                <p>© 2023 Marketify. All Rights Reserved.</p>
+                <p>© 2024 Marketify. All Rights Reserved. | Developed by <a href="https://github.com/RAFYA-Hamza"
+                        target="_blank">RAFYA-Hamza</a></p>
                 <a href="">Privacy Policy</a>
             </div>
 

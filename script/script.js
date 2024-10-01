@@ -61,7 +61,6 @@ team.forEach((member) => {
             <div class="blog-team__card">
                 <div class="blog-team__heading">
                     <div class="blog-team__profile js-blog-team__profile"></div>
-
                     <div class="blog-team__content">
                         <div class="blog-team__icon"></div>
 
@@ -175,3 +174,14 @@ document
     }
     updateListComments(idStars, sliderDirection);
   });
+
+document.getElementById("form").addEventListener("submit", (event) => {
+  // Prevent form submission from refreshing the page
+  event.preventDefault();
+
+  var formData = new FormData(form);
+  console.log(Object.fromEntries(formData));
+
+  // Reset the form
+  form.reset();
+});

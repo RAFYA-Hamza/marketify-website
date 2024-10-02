@@ -260,6 +260,7 @@ a {
 .about-menu__list {
   position: absolute;
   right: 0;
+  width: 20vw;
   background-color: red;
   /* display: none; */
 }

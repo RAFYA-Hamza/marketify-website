@@ -230,6 +230,10 @@ a {
 
 /* ABOUT SECTION MENU */
 
+#menu-nav {
+  display: none;
+}
+
 .about-menu__nav {
   display: flex;
   flex-direction: column;

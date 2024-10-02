@@ -2,4 +2,8 @@
   #desktop-nav {
     display: none;
   }
+
+  #menu-nav {
+    display: flex;
+  }
 }

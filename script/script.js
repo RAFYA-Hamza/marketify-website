@@ -185,3 +185,11 @@ document.getElementById("form").addEventListener("submit", (event) => {
   // Reset the form
   form.reset();
 });
+
+document.querySelector(".about-menu__icon").addEventListener("click", () => {
+  const list = document.querySelector(".about-menu__list");
+  const menu = document.querySelector(".about-menu__icon");
+
+  list.classList.toggle("open");
+  menu.classList.toggle("open");
+});

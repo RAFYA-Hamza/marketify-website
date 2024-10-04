@@ -1,4 +1,7 @@
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) {
+  * {
+    font-size: 14px;
+  }
   #desktop-nav {
     display: none;
   }
@@ -6,4 +9,294 @@
   #menu-nav {
     display: flex;
   }
+
+  .about {
+    justify-content: start;
+
+    gap: 8rem;
+    padding: 1.75rem 4.25rem;
+  }
+
+  .about__logo {
+    font-size: 1.5rem;
+  }
+
+  .about__content {
+    gap: 2.5rem;
+  }
+
+  .about__title {
+    font-size: 3.25rem;
+  }
+
+  .about__image {
+    height: 40vw;
+    width: 50vw;
+  }
+
+  .about__logos {
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 0 9rem;
+  }
+
+  /* SERVICES SECTION */
+
+  .service {
+    gap: 4rem;
+    padding: 4.25rem;
+  }
+
+  .service__card {
+    height: 16rem;
+
+    padding: 2.5rem;
+    border-radius: 45px;
+  }
+
+  .service__logo {
+    height: 9rem;
+    width: 12em;
+  }
+
+  .service__image {
+    transform: translate(30px, -90px);
+  }
+
+  /* USE CASES SECTION */
+
+  .cases {
+    gap: 4rem;
+    padding: 4.25rem;
+  }
+
+  .cases__container {
+    height: 19rem;
+    padding: 2.75rem;
+    gap: 1rem;
+  }
+
+  .process {
+    padding: 4.25rem;
+  }
+
+  /* BLOG SECTION */
+
+  .blog {
+    padding: 4.25rem;
+  }
+
+  .blog-team__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+
+  .blog-testimonial__container {
+    gap: 5rem;
+  }
+
+  /* CONTACT SECION */
+
+  .contact {
+    padding: 4.25rem 4.25rem 0px 4.25rem;
+  }
+
+  .contact-block__container {
+    padding: 2.75rem 0px 3rem 4.25rem;
+  }
+
+  /* FOOTER SECTION */
+
+  .contact-footer__container {
+    gap: 3.125rem;
+  }
+
+  .contact-footer__contacts-subscribe {
+    gap: 1rem;
+
+    padding: 2.625rem 2rem;
+  }
+
+  .contact-footer__contacts-subscribe input {
+    width: 15.875rem;
+  }
+
+  .contact-footer__rights {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    gap: 7rem;
+  }
+
+  .hiding {
+    display: none;
+  }
+
+  .about__content--primary {
+    display: flex;
+  }
+
+  .about__title {
+    width: 24rem;
+  }
+
+  .about__image {
+    height: 30vw;
+    width: 40vw;
+  }
+
+  .about__content--primary {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+    gap: 1.5rem;
+
+    margin-top: -3rem;
+  }
+
+  .about__logos {
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 0rem;
+  }
+
+  .service__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service__contact {
+    height: 21.75rem;
+
+    padding: 2.25rem;
+  }
+
+  .service__image {
+    transform: translate(30px, -20px);
+  }
+
+  .service__image img {
+    height: 20rem;
+  }
+
+  /* CASES SECTION */
+
+  .cases__content p {
+    font-size: 1rem;
+  }
+
+  /* OUR WORK SECTION */
+  .process__card {
+    padding: 1.5rem 2.75rem;
+  }
+
+  /* TEAM SECTION */
+  .blog-team__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+
+  .service__p {
+    width: 100%;
+  }
+
+  /* CONTACT SECTION */
+
+  .contact-block__container {
+    padding: 1.75rem 0px 2rem 3.25rem;
+  }
+
+  .contact-block__field input,
+  .contact-block__field textarea {
+    width: 40rem;
+  }
+
+  .contact-block__logo {
+    display: none;
+  }
+
+  .contact-footer__navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-footer__contacts {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+  }
+
+  .contact-footer__contacts-content {
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .contact-footer__rights {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  /* .hiding {
+    display: flex;
+  }
+
+  .about__content--primary {
+    display: none;
+  } */
+
+  .about {
+    padding: 1.25rem;
+    gap: 1.5rem;
+  }
+
+  .about__title {
+    width: 100%;
+  }
+
+  .about__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .about__content {
+    width: 100%;
+  }
+
+  .about__image {
+    height: 23rem;
+    width: 27rem;
+  }
+
+  .about__content--primary {
+    margin-top: -2rem;
+  }
+
+  .about__logos {
+    justify-content: space-between;
+    gap: 0rem;
+    padding: 0rem;
+  }
+
+  .about__logos img {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 10px;
+
+    width: 10%;
+  }
+
+  /* SERVICE SECTION */
 }

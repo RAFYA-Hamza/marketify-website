@@ -30,6 +30,14 @@ function updateListComments(idStars, direction) {
   contentElement.style.transform = `translateX(${direction * 41}rem)`;
 }
 
+function updateMenu() {
+  const list = document.querySelector(".about-menu__list");
+  const menu = document.querySelector(".about-menu__icon");
+
+  list.classList.toggle("open");
+  menu.classList.toggle("open");
+}
+
 // ----------------------------------> Work team DOM
 working.forEach((work) => {
   working__processHTML += `
@@ -187,9 +195,11 @@ document.getElementById("form").addEventListener("submit", (event) => {
 });
 
 document.querySelector(".about-menu__icon").addEventListener("click", () => {
-  const list = document.querySelector(".about-menu__list");
-  const menu = document.querySelector(".about-menu__icon");
+  updateMenu();
+});
 
-  list.classList.toggle("open");
-  menu.classList.toggle("open");
+document.querySelectorAll(".about-menu__item").forEach((element) => {
+  element.addEventListener("click", () => {
+    updateMenu();
+  });
 });

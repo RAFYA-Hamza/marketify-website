@@ -299,4 +299,179 @@
   }
 
   /* SERVICE SECTION */
+  .service {
+    gap: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .service__card {
+    height: 14rem;
+    padding: 2rem;
+  }
+
+  .service__logo {
+    height: 9rem;
+    width: 10em;
+  }
+
+  .service__image {
+    display: none;
+  }
+
+  .service__contact {
+    height: 19rem;
+    padding: 2rem;
+  }
+
+  /* CASE STUDIES SECTION */
+
+  .cases {
+    gap: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .cases__container {
+    height: 100%;
+
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .cases__divider {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+
+  .cases__content {
+    height: 100%;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  /* WORKING PROCESS SECTION */
+
+  .process {
+    gap: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .process__title h1 {
+    font-size: 1.875rem;
+  }
+
+  .process__title h3 {
+    font-size: 1.125rem;
+  }
+
+  .process__button {
+    height: 2.125rem;
+    width: 2.125rem;
+  }
+
+  .process__button span {
+    height: 2px;
+    width: 30px;
+    display: block;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+  }
+
+  /* BLOG SECTION */
+
+  .blog {
+    padding: 1.25rem;
+    gap: 2.5rem;
+  }
+
+  .blog-team__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog-team__button {
+    margin-top: 0rem;
+  }
+
+  .blog-testimonial__container {
+    gap: 2rem;
+  }
+
+  .blog-testimonial__comment {
+    height: 20.625rem;
+    width: 20.625rem;
+    padding: 2rem;
+  }
+
+  .blog-testimonial__shape {
+    left: 2.5rem;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid var(--secondary-bg-color);
+  }
+
+  .blog-testimonial__name {
+    margin-left: 2rem;
+  }
+
+  .blog-testimonial__slider {
+    width: 90%;
+  }
+
+  /* CONTACT SECTION */
+
+  .contact {
+    padding: 1.25rem 1.25rem 0px 1.25rem;
+    gap: 2rem;
+  }
+
+  .contact-block__container {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .contact-block__form {
+    width: 100%;
+    align-items: unset;
+  }
+
+  .contact-block__field input,
+  .contact-block__field textarea {
+    width: 100%;
+  }
+
+  .contact-footer__navigation {
+    gap: 1.5rem;
+  }
+
+  .contact-footer__navigation-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 01rem;
+  }
+
+  .contact-footer__container {
+    gap: 2rem;
+
+    padding: 2rem;
+  }
+
+  .contact-footer__contacts-subscribe {
+    width: 100%;
+    padding: 1.5rem;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-footer__rights p {
+    text-wrap: wrap;
+    text-align: center;
+  }
 }

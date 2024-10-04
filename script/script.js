@@ -16,6 +16,7 @@ function updateListComments(idStars, direction) {
   const contentElement = document.querySelector(
     ".js-blog-testimonial__content"
   );
+  let screenWidth = window.innerWidth;
 
   starsElement.forEach((element) => {
     element.style.backgroundColor = "var(--accent-bg-color)";
@@ -27,7 +28,11 @@ function updateListComments(idStars, direction) {
     }
   });
 
-  contentElement.style.transform = `translateX(${direction * 41}rem)`;
+  if (screenWidth === 665) {
+    contentElement.style.transform = `translateX(${direction * 24}rem)`;
+  } else {
+    contentElement.style.transform = `translateX(${direction * 41}rem)`;
+  }
 }
 
 function updateMenu() {
@@ -172,8 +177,6 @@ document
 document
   .querySelector(".js-log-testimonial__right-arrow")
   .addEventListener("click", () => {
-    console.log(idStars);
-
     if (idStars < length - 1) {
       sliderDirection--;
       idStars++;

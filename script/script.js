@@ -28,7 +28,7 @@ function updateListComments(idStars, direction) {
     }
   });
 
-  if (screenWidth === 665) {
+  if (screenWidth <= 425) {
     contentElement.style.transform = `translateX(${direction * 24}rem)`;
   } else {
     contentElement.style.transform = `translateX(${direction * 41}rem)`;

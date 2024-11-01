@@ -5,7 +5,7 @@
 ## Introduction
 
 **Navigating the digital landscape for success**  
-Our digital marketing agency helps businesses grow and succeed online through a range of services, including **SEO**, **PPC**, **social media marketing**, and **content creation**. We partner with clients to drive growth, optimize online presence, and achieve measurable results.
+This website it's an example of digital marketing agency helps businesses grow and succeed online through a range of services, including **SEO**, **PPC**, **social media marketing**, and **content creation**. We partner with clients to drive growth, optimize online presence, and achieve measurable results.
 
 ## Table of Contents
 

@@ -1,11 +1,11 @@
 # Digital Marketing Agency Website
 
-![License](https://img.shields.io/github/license/username/digital-marketing-agency) ![Version](https://img.shields.io/github/v/release/username/digital-marketing-agency)
+![License](https://img.shields.io/github/license/username/marketify-website) ![Version](https://img.shields.io/github/v/release/username/marketify-website)
 
 ## Introduction
 
 **Navigating the digital landscape for success**  
-This website it's an example of digital marketing agency helps businesses grow and succeed online through a range of services, including **SEO**, **PPC**, **social media marketing**, and **content creation**. We partner with clients to drive growth, optimize online presence, and achieve measurable results.
+Marketify Website it's an example of digital marketing agency helps businesses grow and succeed online through a range of services, including **SEO**, **PPC**, **social media marketing**, and **content creation**. We partner with clients to drive growth, optimize online presence, and achieve measurable results.
 
 ## Table of Contents
 
@@ -25,11 +25,11 @@ This website it's an example of digital marketing agency helps businesses grow a
 ### Steps
 1. Clone the repository:
     ```bash
-    git clone https://github.com/username/digital-marketing-agency.git
+    git clone https://github.com/username/marketify-website.git
     ```
 2. Open the project in your code editor:
     ```bash
-    cd digital-marketing-agency
+    cd marketify-website
     ```
 
 3. Open `index.html` in your preferred web browser to view the website.
@@ -64,6 +64,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Digital Marketing Agency - [LinkedIn](https://www.linkedin.com/in/username) - contact@youragency.com
+Digital Marketing Agency - [LinkedIn](https://www.linkedin.com/in/hamza-rafya-01a0011b8/) - hamza.rafya.dev@gmail.com
 
-Project Link: [GitHub Repository](https://github.com/username/digital-marketing-agency)
+Project Link: [GitHub Repository](https://github.com/RAFYA-Hamza/marketify-website.git)

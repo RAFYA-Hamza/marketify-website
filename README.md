@@ -1,6 +1,6 @@
 # Digital Marketing Agency Website
 
-![License](https://img.shields.io/github/license/RYham/marketify-website) ![Version](https://img.shields.io/github/v/release/RAFYA-Hamza/marketify-website)
+![License](https://img.shields.io/github/license/RAFYA-Hamza/marketify-website) ![Version](https://img.shields.io/github/v/release/RAFYA-Hamza/marketify-website)
 
 ## Introduction
 

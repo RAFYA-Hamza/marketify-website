@@ -25,7 +25,7 @@ Marketify Website it's an example of digital marketing agency helps businesses g
 ### Steps
 1. Clone the repository:
     ```bash
-    git clone https://github.com/username/marketify-website.git
+    git clone https://github.com/RAFYA-Hamza/marketify-website.git
     ```
 2. Open the project in your code editor:
     ```bash

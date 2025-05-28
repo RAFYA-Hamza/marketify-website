@@ -60,7 +60,6 @@ We welcome contributions! To contribute, please follow these steps:
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
-
 Digital Marketing Agency - [LinkedIn](https://www.linkedin.com/in/hamza-rafya-01a0011b8/) - hamza.rafya.dev@gmail.com
 
 Project Link: [GitHub Repository](https://github.com/RAFYA-Hamza/marketify-website.git)

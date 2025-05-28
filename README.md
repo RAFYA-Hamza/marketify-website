@@ -16,7 +16,6 @@ Marketify Website it's an example of digital marketing agency helps businesses g
 - [Contact](#contact)
 
 ## Installation
-
 ### Prerequisites
 - HTML, CSS, and JavaScript knowledge
 - A code editor (e.g., Visual Studio Code)
